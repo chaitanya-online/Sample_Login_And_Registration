@@ -7,7 +7,7 @@
 <title>Login</title>
 </head>
 <body>
-<h1>Enter Login Details</h1>
+<h1>Enter Login Details : -</h1>
 <form action=Login method="post">
 <input type="text" name="Username" placeholder="Enter UserName" required>
 <input type="password" name="Password" placeholder="Enter Passcode" required>
