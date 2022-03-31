@@ -46,13 +46,15 @@ public class Login2 extends HttpServlet {
 			ResultSet rs = pst.executeQuery();
 
 			if (rs.next()) {
-
-				dispatcher = request.getRequestDispatcher("Logindone.jsp");
-				dispatcher.forward(request, response);
+out.print("Hello");
+//				dispatcher = request.getRequestDispatcher("Logindone.jsp");
+//				dispatcher.forward(request, response);
 
 			} else {
-				dispatcher = request.getRequestDispatcher("Login2.jsp");
-				dispatcher.forward(request, response);
+				out.print("Wrong Credentials");
+				out.print("<a href=Login2.jsp>Click here</a>");
+				// dispatcher = request.getRequestDispatcher("Login2.jsp");
+				// dispatcher.forward(request, response);
 
 			}
 
